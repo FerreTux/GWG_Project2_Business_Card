@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chloelee.gwgbuisnesscard.MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/udacity_logo"
+        android:src="@drawable/udacity"
+        android:background="#eee"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/gwg_logo"
+        android:src="@drawable/ic_logo_gwg"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:padding="8dp"
+        android:background="#eee"
+        android:layout_below="@id/udacity_logo"/>
+
+    <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/gwg_logo">
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:id="@+id/android_logo"
+            android:src="@drawable/ic_android_green_24dp"
+            android:scaleType="fitXY"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textSize="32sp"
+            android:text="Basics"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+        </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textSize="32sp"
+        android:text="Udacity"
+        android:layout_alignParentRight="true"
+        android:textColor="#555"
+        android:layout_marginRight="8dp"
+        android:layout_above="@id/phoneNum"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textSize="24sp"
+        android:text="(650)555-555"
+        android:id="@+id/phoneNum"
+        android:layout_alignParentRight="true"
+        android:textColor="#555"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_above="@id/url"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textSize="24sp"
+        android:id="@+id/url"
+        android:text="www.udacity.com"
+        android:layout_alignParentRight="true"
+        android:textColor="#555"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_above="@id/address"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:fontFamily="sans-serif-light"
+        android:textSize="24sp"
+        android:text="2465 Latham Street,"
+        android:layout_alignParentRight="true"
+        android:textColor="#555"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_above="@id/address2"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address2"
+        android:fontFamily="sans-serif-light"
+        android:textSize="24sp"
+        android:text="Mountain View CA, 94043"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="#555"
+        android:layout_marginTop="8dp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+</RelativeLayout>
